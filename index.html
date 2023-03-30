@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <section>
+            <div class="container">   
+                <div class="calculator">
+                   <div class="display">
+                        <input type="text" id="display" placeholder="calculator">
+                   </div>
+                   <div class="col-2">
+                        <table>
+                            <tr>
+                                <td><button id="c" onclick="ac()">C</button></td>
+                                <td><button id="mad" onclick="num('%')">%</button></td>
+                                <td><button id="mul" onclick="num('*')">x</button></td>
+                                <td><button id="del" onclick="del()">DEL</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="seven" onclick="num('7')">7</button></td>
+                                <td><button id="eight" onclick="num('8')">8</button></td>
+                                <td><button id="nine" onclick="num('9')">9</button></td>
+                                <td><button id="sub" onclick="num('-')">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="four" onclick="num('4')">4</button></td>
+                                <td><button id="five" onclick="num('5')">5</button></td>
+                                <td><button id="six" onclick="num('6')">6</button></td>
+                                <td><button ID="add" onclick="num('+')">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="one" onclick="num('1')">1</button></td>
+                                <td><button id="two" onclick="num('2')">2</button></td>
+                                <td><button id="three" onclick="num('3')">3</button></td>
+                                <td rowspan="2"><button id="sum" onclick="sum()">=</button></td>
+                            </tr>
+                            <tr>
+                                <td><button id="zerozero" onclick="num('00')">00</button></td>
+                                <td><button id="zero" onclick="num('0')">0</button></td>
+                                <td><button id="dot" onclick="num('.')">.</button></td>
+                            </tr>
+                        </table>
+                   </div> 
+                </div>
+            </div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>
